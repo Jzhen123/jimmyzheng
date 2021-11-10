@@ -1,12 +1,23 @@
-import React from 'react';
+import React from "react";
+
+import * as pages from "./pages";
+
+const { Home } = pages;
 
 const App = () => {
+  return (
+    <>
+      {/* <div className="header">
+                <Home />
+            </div> */}
+      <div className="main">
+        <Home />
+      </div>
+      {/* <div className="footer">
+                <Home />
+            </div> */}
+    </>
+  );
+};
 
-    return (
-        <div>
-            <h1>Jimmy Zheng</h1>
-        </div>
-    );
-}
-
-export default App
+export default App;

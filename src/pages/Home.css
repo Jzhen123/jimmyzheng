@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+
+html {
+  background: url(/src/resources/images/northernLights.jpeg) no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  height: 100vh;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px; /* 50% */
+  }
+}
+.montserrat {
+  font-family: Montserrat;
+}
+
+.red {
+  color: #cf4c4e;
+}
+
+.white {
+  color: white;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.mask {
+  overflow: hidden;
+  position: relative;
+}
+
+.nameAnimation {
+  width: 20em;
+  height: 4em;
+  margin: 1em auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 50%;
+}
+.subNameAnimation {
+  width: 10em;
+  height: 4em;
+  margin: 1em auto;
+  margin-top: 1.3em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes name {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  30% {
+    transform: translate3d(0, -100%, 0);
+  }
+  60% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes subName {
+    0% {
+      transform: translate3d(0, -100%, 0);
+    }
+    50% {
+      transform: translate3d(0, -100%, 0);
+    }
+    80% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+#name > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+#name > div div {
+  animation: 3s;
+}
+#name > div:first-child {
+  font-size: 2.8em;
+}
+#name > div:first-child div {
+  animation-name: name;
+}
+
+
+#subName > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+#subName > div div {
+  animation: 3s;
+}
+#subName > div:first-child {
+  font-size: 1em;
+  align-self: center;
+}
+#subName > div:first-child div {
+  animation-name: subName;
+}
