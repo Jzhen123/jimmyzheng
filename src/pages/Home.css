@@ -75,17 +75,17 @@ html {
 }
 
 @keyframes subName {
-    0% {
-      transform: translate3d(0, -100%, 0);
-    }
-    50% {
-      transform: translate3d(0, -100%, 0);
-    }
-    80% {
-      transform: translate3d(0, 0, 0);
-    }
+  0% {
+    transform: translate3d(0, -100%, 0);
   }
-  
+  50% {
+    transform: translate3d(0, -100%, 0);
+  }
+  80% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 #name > div {
   display: inline-block;
   vertical-align: middle;
@@ -99,7 +99,6 @@ html {
 #name > div:first-child div {
   animation-name: name;
 }
-
 
 #subName > div {
   display: inline-block;

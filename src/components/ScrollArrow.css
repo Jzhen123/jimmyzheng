@@ -1,0 +1,90 @@
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: -5%;
+  left: 50%;
+}
+.scroll {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+}
+.scroll__line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 1px;
+  height: 100%;
+  z-index: 10;
+  background-color: #fff;
+  animation: line 2s infinite normal;
+  animation-delay: 3s;
+  visibility: hidden;
+  transform: translateY(-50%);
+}
+.scroll__arrow {
+  display: block;
+  position: relative;
+  z-index: 111;
+  padding-left: 1px;
+  top: -13px;
+  animation: 2s fadeIn;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes line {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  5% {
+    visibility: visible;
+    opacity: 0.3;
+    transform: translate3d(0, -95%, 0);
+  }
+  10% {
+    opacity: 0.4;
+    transform: translate3d(0, -90%, 0);
+  }
+  15% {
+    opacity: 0.5;
+    transform: translate3d(0, -85%, 0)
+  }
+  20% {
+    opacity: 0.75;
+  }
+  25% {
+    opacity: 1;
+  }
+  85% {
+    transform: translate3d(0, 95%, 0);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  10% {
+    visibility: visible;
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}

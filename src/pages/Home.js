@@ -1,4 +1,6 @@
 import React from "react";
+
+import ScrollArrow from "../components/ScrollArrow";
 import "./Home.css";
 export default () => {
   return (
@@ -14,6 +16,8 @@ export default () => {
           <div>Software Developer</div>
         </div>
       </div>
+      
+      <ScrollArrow />
     </div>
   );
 };
