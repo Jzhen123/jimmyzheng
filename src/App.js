@@ -1,4 +1,5 @@
 import React from "react";
+// import { Layout, } from "antd";
 
 import * as pages from "./pages";
 
@@ -11,7 +12,9 @@ const App = () => {
                 <Home />
             </div> */}
       <div className="main">
+      {/* <Layout> */}
         <Home />
+        {/* </Layout> */}
       </div>
       {/* <div className="footer">
                 <Home />
