@@ -4,18 +4,18 @@ import { Row, Col } from "antd";
 import ScrollArrow from "../components/ScrollArrow";
 import "./Home.css";
 
-export default () => {
+const Home = () => {
   return (
     <>
       <Row align="middle" justify="center" style={{ height: "100vh" }}>
-        <Col id="text">
-          <Row justify="center" className="nameAnimation mask">
-            <Col id="name" className="white montserrat">
+        <Col id="hero-text">
+          <Row justify="center" className="mask">
+            <Col className="hero-text-header montserrat white">
               Jimmy Zheng
             </Col>
           </Row>
-          <Row justify="center" className="subNameAnimation mask">
-            <Col id="subName" className="white montserrat">
+          <Row justify="center" className="mask">
+            <Col className="hero-text-subheader montserrat white">
               Software Developer
             </Col>
           </Row>
@@ -26,3 +26,5 @@ export default () => {
     </>
   );
 };
+
+export default Home;

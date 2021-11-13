@@ -3,62 +3,20 @@
 body {
   background: radial-gradient(transparent, rgba(0, 0, 0, 0.33)),
     url(/src/resources/images/northernLights.jpeg) no-repeat center center fixed;
-
-  height: 100vh;
   background-size: cover;
+  height: 100vh;
 }
 
-.montserrat {
-  font-family: Montserrat;
+.hero-text-header {
+  animation: 3s;
+  animation-name: header;
+}
+.hero-text-subheader {
+  animation: 3s;
+  animation-name: subHeader;
 }
 
-.red {
-  color: #cf4c4e;
-}
-
-h1.ant-typography, .white {
-  color: white;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.mask {
-  overflow: hidden;
-  position: relative;
-}
-@media (max-width: 576px) { 
-    #name { font-size: 8vw }
-    #subName { font-size: 2.67vw }
- }
-@media (min-width: 576px) { 
-    #name { font-size: 6vw }
-    #subName { font-size: 2vw }
- }
-@media (min-width: 768px) { 
-    #name { font-size: 5vw }
-    #subName { font-size: 1.67vw }
- }
-@media (min-width: 992px) { 
-    #name { font-size: 4vw }
-    #subName { font-size: 1.33vw }
- }
-@media (min-width: 1200px) { 
-    #name { font-size: 3vw }
-    #subName { font-size: 1vw }
- }
-#name {
-    animation: 3s;
-    animation-name: name;
-}
-
-#subName {
-    animation: 3s;
-    animation-name: subName;
-}
-
-@keyframes name {
+@keyframes header {
   0% {
     transform: translate3d(0, -100%, 0);
   }
@@ -69,8 +27,7 @@ h1.ant-typography, .white {
     transform: translate3d(0, 0, 0);
   }
 }
-
-@keyframes subName {
+@keyframes subHeader {
   0% {
     transform: translate3d(0, -100%, 0);
   }
@@ -79,5 +36,46 @@ h1.ant-typography, .white {
   }
   80% {
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-text-header {
+    font-size: 9vw;
+  }
+  .hero-text-subheader {
+    font-size: 3.66vw;
+  }
+}
+@media (min-width: 576px) {
+  .hero-text-header {
+    font-size: 6vw;
+  }
+  .hero-text-subheader {
+    font-size: 2.66vw;
+  }
+}
+@media (min-width: 768px) {
+  .hero-text-header {
+    font-size: 4vw;
+  }
+  .hero-text-subheader {
+    font-size: 2vw;
+  }
+}
+@media (min-width: 992px) {
+  .hero-text-header {
+    font-size: 3.33vw;
+  }
+  .hero-text-subheader {
+    font-size: 1.66vw;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-text-header {
+    font-size: 3vw;
+  }
+  .hero-text-subheader {
+    font-size: 1.33vw;
   }
 }

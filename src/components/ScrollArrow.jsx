@@ -1,6 +1,8 @@
 import React from "react";
-import './ScrollArrow.css'
-export default () => (
+
+import "./ScrollArrow.css";
+
+const ScrollArrow = () => (
   <div className="container">
     <div class="scroll">
       <span class="scroll__line"></span>
@@ -37,3 +39,5 @@ export default () => (
     </span>
   </div>
 );
+
+export default ScrollArrow;

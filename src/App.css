@@ -1,0 +1,16 @@
+.montserrat {
+  font-family: Montserrat;
+}
+
+.white {
+  color: white;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.mask {
+  overflow: hidden;
+  position: relative;
+}

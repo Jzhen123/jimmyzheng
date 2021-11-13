@@ -1,7 +1,8 @@
 import React from "react";
-// import { Layout, } from "antd";
 
 import * as pages from "./pages";
+
+import './App.css'
 
 const { Home } = pages;
 
