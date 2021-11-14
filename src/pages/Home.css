@@ -6,7 +6,9 @@ body {
   background-size: cover;
   height: 100vh;
 }
-
+.ant-layout {
+  background: none
+}
 .hero-text-header {
   animation: 3s;
   animation-name: header;

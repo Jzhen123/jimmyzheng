@@ -1,0 +1,55 @@
+.hero-sider {
+  align-items: center;
+  animation: 2s siderFadeIn;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  background: none;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 8vw !important;
+  max-width: 8vw !important;
+  position: fixed;
+  width: 8vw !important;
+  visibility: hidden;
+}
+
+.hero-sider::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+.icons {
+  position: relative;
+  margin: 16px auto;
+}
+.sider-icon {
+  color: #fff;
+  display: block;
+  font-size: 1.25vw;
+  margin: 24px auto;
+}
+
+.sider-text {
+  position: relative;
+  color: white;
+  margin: 16px auto;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+}
+
+@keyframes siderFadeIn {
+  0% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
