@@ -1,13 +1,30 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap);
 
-body {
+#home {
   background: radial-gradient(transparent, rgba(0, 0, 0, 0.33)),
-    url(/src/resources/images/northernLights.jpeg) no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
+    url(/src/resources/images/northernLights.jpeg) no-repeat center center fixed !important;
+  background-size: cover !important;
+  height: 100vh !important;
+}
+#zuck {
+  background: radial-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url(/src/resources/images/zuck.png) no-repeat center center fixed !important;
+  background-size: cover !important;
+  height: 100vh !important;
+}
+
+.scroller {
+  flex-basis: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+}
+.scrollee {
+  scroll-snap-align: start;
 }
 .ant-layout {
-  background: none
+  background: none;
 }
 .hero-text-header {
   animation: 3s;
