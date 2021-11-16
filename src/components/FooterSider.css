@@ -10,6 +10,7 @@
   min-width: 8vw !important;
   max-width: 8vw !important;
   position: fixed;
+  z-index: 2;
   width: 8vw !important;
   visibility: hidden;
 }
