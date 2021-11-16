@@ -43,13 +43,15 @@
   writing-mode: vertical-rl;
 }
 
-@keyframes siderFadeIn {
-  0% {
-    visibility: visible;
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
+@media (min-width: 992px) {
+  @keyframes siderFadeIn {
+    0% {
+      visibility: visible;
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }

@@ -7,9 +7,10 @@ import {
   TwitterOutlined,
 } from "@ant-design/icons";
 
-import FooterSiderbar from "../components/FooterSidebar";
-import ScrollArrow from "../components/ScrollArrow";
+import { FooterSider, ProjectShowcase, ScrollArrow } from "../components";
+
 import "./Home.css";
+import wePlan from '../resources/images/wePlan.png'
 
 const { Content } = Layout;
 
@@ -17,17 +18,17 @@ const Home = () => {
   return (
     <div className="scroller">
       <Layout id="home" className="scrollee">
-        <FooterSiderbar position="left">
+        <FooterSider position="left">
           <div className="icons">
-            <GithubOutlined className="sider-icon" />
-            <InstagramOutlined className="sider-icon" />
-            <LinkedinOutlined className="sider-icon" />
-            <TwitterOutlined className="sider-icon" />
+            <a href="https://github.com/Jzhen123" target="_blank" rel="noreferrer"><GithubOutlined className="sider-icon" /></a>
+            <a href="https://www.instagram.com/_jimmmmmy_/" target="_blank" rel="noreferrer"><InstagramOutlined className="sider-icon" /></a>
+            <a href="https://www.linkedin.com/in/thejimmyzheng/" target="_blank" rel="noreferrer"><LinkedinOutlined className="sider-icon" /></a>
+            <a href="https://twitter.com/Zheng120" target="_blank" rel="noreferrer"><TwitterOutlined className="sider-icon" /></a>
           </div>
-        </FooterSiderbar>
+        </FooterSider>
 
         <Content>
-          <Row align="middle" justify="center" style={{ height: "100vh" }}>
+          <Row align="middle" justify="center" style={{ height: "100vh", position: 'relative' }}>
             <Col id="hero-text">
               <Row justify="center" className="mask">
                 <Col className="hero-text-header montserrat white">
@@ -40,22 +41,17 @@ const Home = () => {
                 </Col>
               </Row>
             </Col>
+              <ScrollArrow />
           </Row>
-
-          <ScrollArrow />
         </Content>
 
-        <FooterSiderbar position="right">
-          <div className="sider-text montserrat">jimmy@jimmyzheng.com</div>
-        </FooterSiderbar>
+        <FooterSider position="right">
+          <a href="mailto:jimmy@jimmyzheng.com" target="_blank" rel="noreferrer" className="sider-text montserrat">jimmy@jimmyzheng.com</a>
+        </FooterSider>
       </Layout>
 
-      <Layout
-        id="zuck"
-        className="scrollee"
-        style={{ height: "100vh", backgroundColor: "#000000" }}
-      >
-        <div style={{ color: "white" }}>Hellfewcrweirucnoweo</div>
+      <Layout className="scrollee project-showcase-background">
+      <ProjectShowcase image={wePlan}/>
       </Layout>
     </div>
   );

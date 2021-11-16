@@ -1,11 +1,11 @@
 import React from "react";
 import { Layout } from "antd";
 
-import "./FooterSidebar.css";
+import "./FooterSider.css";
 
 const { Sider } = Layout;
 
-const FooterSiderbar = ({ children, position }) => {
+const FooterSider = ({ children, position }) => {
   return (
     <Sider className="hero-sider" style={{ [position]: 0 }}>
       {children}
@@ -14,4 +14,4 @@ const FooterSiderbar = ({ children, position }) => {
   );
 };
 
-export default FooterSiderbar;
+export default FooterSider;

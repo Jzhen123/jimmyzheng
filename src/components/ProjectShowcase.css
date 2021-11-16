@@ -1,0 +1,8 @@
+.opacity-layer {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+}
+.opacity-layer:hover {
+    background: rgba(0, 0, 0, 0)
+}
