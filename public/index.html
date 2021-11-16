@@ -12,5 +12,22 @@
   </head>
   <body>
     <div id="root"></div>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyDrd5Um4T4s7iKFsQ0_YkPE0wHNgEI2t4U",
+        authDomain: "jimmy-zheng-personal.firebaseapp.com",
+        projectId: "jimmy-zheng-personal",
+        storageBucket: "jimmy-zheng-personal.appspot.com",
+        messagingSenderId: "749504295137",
+        appId: "1:749504295137:web:bc414880854812d57087a0",
+        measurementId: "G-9PQBDY41BN"
+      };
+    
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
